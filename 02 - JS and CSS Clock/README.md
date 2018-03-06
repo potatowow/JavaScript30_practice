@@ -1,6 +1,6 @@
 # JS + CSS Clock
 
-###Think
+### Think
 1. 如何讓CSS隨著現在時間顯示指定角度
 2. element transform的`rotate`不能以中心點為旋轉點
 3. 設定`div`指針預設指向12點方向
