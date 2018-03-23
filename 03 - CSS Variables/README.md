@@ -1,4 +1,4 @@
-# CSS Variables
+# JS30_Day3 - CSS Variables
 
 ### Think
 
@@ -8,9 +8,17 @@
 
 ## **JavaScript步驟**
 1. 宣告變數`inputs`，取得頁面所有`input`元素
-2. 監聽`inputs`，只要有變動即觸發`handleUpdate`更新
-3. 增加滑鼠滑動的監聽(方法同2)
+2. 監聽`inputs`，只要有變動`change`即觸發`handleUpdate`更新
+    ```js
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    ```
+3. 增加滑鼠滑動`mousemove`的監聽(方法同2)
+**但是mousemove方法只要滑鼠有變動值就會改變，可以再新增有click之類的達到按下滑動才改變的功能
 
+4. CSS雖然有宣告屬性值，但沒有值的suffix(單位識別)，所以，宣告suffix，並用自訂屬性data-sizing帶入值
+    ```js
+    const suffix = this.dataset.sizing || '';
+    ```
 ### HTML部分
 1. `<input type="range">` 滑動軸
   補充`range`的css運用
