@@ -17,8 +17,11 @@
 
 4. CSS雖然有宣告屬性值，但沒有值的suffix(單位識別)，所以，宣告suffix，並用自訂屬性data-sizing帶入值
     ```js
-    const suffix = this.dataset.sizing || '';
+    const suffix = this.dataset.sizing || ''; //suffix等於dataset.sizing 或 nothing
     ```
+
+5. 再將變動的CSS樣式值存入CSS內(記得加上suffix，才能有單會可以顯示變動)
+
 ### HTML部分
 1. `<input type="range">` 滑動軸
   補充`range`的css運用
